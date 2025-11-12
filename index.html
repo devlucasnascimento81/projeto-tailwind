@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube devclub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header class="fixed top-0 right-0 left-0 bg-white z-50 px-4 py-2 flex items-center justify-between border-b border-gray-200">
+        <div class="flex items-center gap-4 ">
+
+            <button class="p-2 hover:bg-gray-100 cursor-pointer rounded-full py-1">
+                <i class="ri-menu-line text-xl"></i>
+            </button>
+
+            <div class="flex items-center gap-1 cursor-pointer">
+                <i class="ri-youtube-fill text-3xl text-red-600"></i> 
+                <span class="text-xl font-semibold">YouTube</span> 
+                <span class="text-[12px] text-gray-600 mb-3">BR</span> 
+            </div>
+        </div> 
+        
+        <form class="flex-1 max-w-2xl mx-4 flex ">
+            <input type="text" placeholder="Pesquisar" class="flex-1 px-4 py-2 border border-gray-300 rounded-l-full rounded-tr-none">
+            <button class="px-4 py-2 bg-gray-50 border border-l-0 border-gray-300 rounded-r-full hover:bg-gray-300 cursor-pointer">
+                <i class="ri-search-line"></i>
+            </button> 
+            <button class="ml-2 px-2 py-3 bg-gray-100 rounded-full hover:bg-gray-200 cursor-pointer duration-300 ease-in">
+                <i class="ri-mic-line"></i>
+            </button>   
+        </form>
+
+        <div class="flex items-center gap-2">
+            <button class="p-2 hover:bg-gray-100 rounded-full cursor-pointer">
+                <i class="ri-video-add-line text-xl"></i>
+            </button>
+            <button class="p-2 hover:bg-gray-100 rounded-full cursor-pointer">
+                <i class="ri-notification-3-line text-xl"></i>
+            </button>
+            <button class="ml-2 w-8 h-8 bg-purple-600 rounded-full text-white cursor-pointer ">
+                L
+            </button>
+        </div>
+    </header>
+
+    <div class="flex pt-14">
+        <aside class="fixed left-0 top-14 w-60 bg-white overflow-y-auto overflow-x-hidden py-6 ">
+            <nav class="space-y-1">
+                <a href="#" class="flex items-center gap-6 px-6 py-2 bg-gray-100">
+                    <i class="ri-home-4-fill text-xl"></i>
+                    <span class="text-sm font-medium">Início</span>
+                </a>
+
+                <a href="#" class="flex items-center gap-6 px-6 py-2 transition duration-100 ease-in hover:bg-gray-100 hover:translate-x-1">
+                    <i class="ri-compass-3-line text-xl"></i>
+                    <span class="text-sm font-medium">Explorar</span>
+                </a>
+
+                 <a href="#" class="flex items-center gap-6 px-6 py-2transition duration-100 ease-in hover:bg-gray-100 hover:translate-x-1">
+                    <i class="ri-play-list-2-line text-xl"></i>
+                    <span class="text-sm font-medium">Inscrições</span>
+                </a>
+                <hr class="mx-6 my-3 text-gray-300">
+                <a href="#" class="flex items-center gap-6 px-6 py-2transition duration-100 ease-in hover:bg-gray-100 hover:translate-x-1">
+                    <i class="ri-history-line text-xl"></i>
+                    <span class="text-sm font-medium">Histórico</span>
+                </a>
+                 <a href="#" class="flex items-center gap-6 px-6 py-2transition duration-100 ease-in hover:bg-gray-100 hover:translate-x-1">
+                    <i class="ri-time-line text-xl"></i>
+                    <span class="text-sm font-medium">Assistir mais tarde</span>
+                </a>
+
+                 <a href="#" class="flex items-center gap-6 px-6 py-2transition duration-100 ease-in hover:bg-gray-100 hover:translate-x-1">
+                    <i class="ri-thumb-up-line text-xl"></i>
+                    <span class="text-sm font-medium">Marcados com gostei</span>
+                </a>
+                <hr class="mx-6 my-3 text-gray-300">
+
+                <h3 class="px-6 py-2 text-sm font-medium text-gray-900">Inscrições</h3>
+
+                <a href="#" class="flex items-center gap-6 px-6 py-2 transition duration-100 ease-in hover:bg-gray-100 hover:translate-x-1">
+                    <div class="w-6 h-6 bg bg-red-600 rounded-full"></div>
+                    <span class="text-sm font-medium">Tech Channel </span>
+                </a>
+
+                <a href="#" class="flex items-center gap-6 px-6 py-2 transition duration-100 ease-in hover:bg-gray-100 hover:translate-x-1">
+                    <div class="w-6 h-6 bg bg-green-500 rounded-full"></div>
+                    <span class="text-sm font-medium">Gaming Channel </span>
+                </a>
+
+                <a href="#" class="flex items-center gap-6 px-6 py-2 transition duration-100 ease-in hover:bg-gray-100 hover:translate-x-1">
+                    <div class="w-6 h-6 bg bg-blue-600 rounded-full"></div>
+                    <span class="text-sm font-medium">Fitness Channel </span>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="flex-1 ml-60 p-6">
+            <div class="flex gap-3 mb-6 overflow-x-auto pb-2 pt-4">
+                <button class=" px-3 py-1 bg-gray-800 text-white rounded-lg text-sm cursor-pointer hover:bg-gray-100 hover:text-black transition duration-200 ease-in">Tudo</button>
+                <button class=" px-3 py-1 bg-gray-100 rounded-lg text-sm hover:bg-gray-800 hover:text-white cursor-pointer transition duration-200 ease-in">Música</button>
+                <button class=" px-3 py-1 bg-gray-100 rounded-lg text-sm hover:bg-gray-800 hover:text-white cursor-pointer transition duration-200 ease-in">Jogos</button>
+                <button class=" px-3 py-1 bg-gray-100 rounded-lg text-sm hover:bg-gray-800 hover:text-white cursor-pointer transition duration-200 ease-in">Kids</button>
+                <button class=" px-3 py-1 bg-gray-100 rounded-lg text-sm hover:bg-gray-800 hover:text-white cursor-pointer transition duration-200 ease-in">Notícias</button>
+                <button class=" px-3 py-1 bg-gray-100 rounded-lg text-sm hover:bg-gray-800 hover:text-white cursor-pointer transition duration-200 ease-in">filmes</button>
+            </div>
+
+            <div class="grid grid-cols-4 gap-4" id="videos"></div>
+
+
+        </main>
+            
+            
+    </div>
+    
+</body>
+
+<script>
+    const videos = [
+        {title:"Curso de HTML DO BASICO AO AVNÇADO!", channel: "Rodolfo Mori", views: "130mil", time:"há 2 dias", durations: "2:10:34"},
+        {title:"Como ganhar massa muscular RÁPIDO", channel: "planeta fitness", views: "30mil", time:"há 3 dias", durations: "11:44"},
+        {title:"JavaScrpit na prática [COM PROJETOS!]", channel: "NOVO MUNDO", views: "330mil", time:"há 1 dia", durations: "1:10:34"},
+        {title:"TOP 10 games de 2025", channel: "Luan gameplay", views: "230mil", time:"há 6 dias", durations: "09:34"},
+        {title:"Curso git e github", channel: "curso em video", views: "110mil", time:"há 4 dias", durations: "56:31"},
+        {title:"Review rtx 6090 (DIRETO DA CALIFÓRNIA)", channel: "tech plus", views: "930mil", time:"há 1 dia", durations: "22:30"},
+        {title:"Como ter  mais ideias produtivas ?", channel: "uma  pessoa melhor", views: "39mil", time:"há 6 dias", durations: "08:14"},
+        {title:"Como DIMINUIR o lag no seu jogo!! ", channel: "Douglas FPS", views: "20mil", time:"há 3 semanas", durations: "10:10"},
+        {title:"Como viajar para o exterior em 2026!", channel: "Euro trip", views: "830mil", time:"há 2 dias", durations: "15:44"},
+        {title:"Juntei 30mil em 5 mêses!", channel: "Edu investidor", views: "630mil", time:"há 5 dias", durations: "08:12"},
+        {title:"Comprei minha primeira fazenda!", channel: "agro top", views: "130mil", time:"há 2 dias", durations: "30:30"},
+        {title:"Estudei inglês sozinho por 1 ano", channel: "Speak english with james", views: "222mil", time:"há 2 dias", durations: "22:22"}
+    ]
+
+    const container = document.getElementById("videos")
+
+        videos.forEach( (video, i) => {
+            const videoCard = document.createElement('article')
+            
+            videoCard.className = 'cursor-pointer'
+            
+            videoCard.innerHTML = `
+            <div class="relative bg-gray-200 rounded-xl overflow-hidden aspect-video">
+                <img src="https://picsum.photos/200/300?random=${i}" class="w-full h-full object-cover">
+                <span class="absolute bottom-2 right-2 bg-black bg-opacity-80 text-white text-xs px-1 rounded">${video.durations}</span>
+            </div>
+
+            <div class="flex gap-3 mt-3">
+                <div>
+                    <h3 class="font-medium text-base">${video.title}</h3>
+                    <p class="text-sm text-gray-600 mt-1">${video.channel}</p>
+                    <p class="text-sm text-gray-600">${video.views}</p>
+                </div>
+            </div>
+            
+            `
+
+            container.appendChild(videoCard)
+
+        })
+
+</script>
+
+</html>
